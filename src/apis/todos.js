@@ -16,7 +16,7 @@ export const addTodoData = async(todo) => {
 
 // axios.delete() 一致したidのTODOを削除
 export const deleteTodoData = async(id) => {
-  const response = await axios.delete(`${todoDataUrl}/${id}`)
+  await axios.delete(`${todoDataUrl}/${id}`)
   return id
 }
 
